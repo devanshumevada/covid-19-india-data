@@ -1,0 +1,41 @@
+.national_data {
+    font-size: 1.3rem;
+    background-color: aqua;
+}
+
+.national_data_col {
+    margin: 10px;
+    cursor: pointer;
+}
+
+.state_data_col {
+    cursor: pointer;
+    margin: 10px;
+}
+
+.to_show::first-letter {
+    text-transform: capitalize;;
+}
+
+.state_data {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+}
+
+.district_data {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+}
+
+.district_data_col {
+    cursor: pointer;
+    margin: 10px;
+}
+
+.search_state {
+    margin: 20px;
+}
+
+#map {
+    margin:10px;
+}
