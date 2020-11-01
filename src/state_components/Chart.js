@@ -3,7 +3,6 @@ import {Bar} from 'react-chartjs-2';
 
 const Chart = props => {
     const district_data = props.data;
-    console.log(district_data);
     const to_show = props.to_show;
     const search_text = props.search_text;
 
