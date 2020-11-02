@@ -16,11 +16,13 @@ class App extends React.Component {
 
 
   get_data = async() => {
-    fetch("https://api.covid19india.org/data.json")
-      .then(res => res.json())
-      .then(data => this.setState({national_data:data.statewise[0], state_data: data.statewise.slice(1)}, () => {
-        this.setState({loading:false});
-      }));
+    const resp = await fetch("https://api.covid19india.org/data.json");
+    const data = await resp.json();
+    this.setState({
+      national_data:data.statewise[0],
+      state_data: data.statewise.slice(1),
+      loading:false
+    });
   }
 
   componentDidMount = () => {
