@@ -16,7 +16,6 @@ const StateInfo = props => {
         .then(
             res=>res.json())
         .then(data => {
-			console.log(data);
             set_district_data(data[state]); 
             set_loading(false);
         })
