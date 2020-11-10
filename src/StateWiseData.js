@@ -14,6 +14,7 @@ const StateWiseData = props => {
     const [data, set_data] = useState([]);
     const [search_text, set_text] = useState("");
 
+    // Changing synchronously because with asynchronous update using useEffect, there was this display/elements flickering issue 
     useLayoutEffect(()=> {
         set_data(
             state_data.filter(

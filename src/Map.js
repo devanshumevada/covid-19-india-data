@@ -5,7 +5,6 @@ import FusionMaps from 'fusioncharts/maps/es/fusioncharts.india';
 import World from 'fusioncharts/fusioncharts.maps';
 import state_code_to_id_map from './helper/state_code_to_id_map';
 
-
 import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.candy';
 ReactFC.fcRoot(FusionCharts, FusionMaps, World, FusionTheme);
 

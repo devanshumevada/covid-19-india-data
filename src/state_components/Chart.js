@@ -8,6 +8,9 @@ const Chart = props => {
 
     const [data, set_data] = useState({});
     useLayoutEffect(()=>{
+        /* 
+            -> The data adapts to the change in to_show, district_data and search_text and updates the chart based on those changes
+        */
         let labels = []
         let datasets = [
             {
