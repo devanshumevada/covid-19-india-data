@@ -27,7 +27,7 @@ const StateWiseData = props => {
 
 
     const handle_search_text_change = e => {
-        set_text(e.target.value.toLowerCase());
+        set_text(e.target.value.toLowerCase().trim());
     }
 
 
@@ -35,7 +35,7 @@ const StateWiseData = props => {
             <div id="StateWiseData">
                 <Map state_data={state_data} to_show={to_show} />
                 <div className="search_state">
-                    <input onChange={handle_search_text_change} value={search_text} type="text" placeholder="Filter state" />
+                    <input onChange={handle_search_text_change} type="text" placeholder="Filter state" />
                 </div>
 
                 <div className="state_data">

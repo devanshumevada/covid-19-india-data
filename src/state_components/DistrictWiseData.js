@@ -54,7 +54,7 @@ const DistrictWiseData = props => {
     },[search_text, filter_data]);
 
     const handle_change = e => {
-       set_text(e.target.value.toLowerCase());
+        set_text(e.target.value.toLowerCase().trim());
     }
 
    return(
