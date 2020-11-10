@@ -10,19 +10,20 @@ const StateInfo = props => {
     const state = props.match.params.name;
     const state_info = props.location.state_info;
 
+
     useEffect(() =>{
         fetch("https://api.covid19india.org/state_district_wise.json")
         .then(
             res=>res.json())
         .then(data => {
+			console.log(data);
             set_district_data(data[state]); 
-        })
-        .then(() => {
             set_loading(false);
         })
         .catch(err=>
             console.log(err.toString()));
-    });
+	},[state]);
+	
     return(
         <div id="state_info">
         { loading ? 
