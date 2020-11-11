@@ -16,7 +16,7 @@ const Map = props => {
     const [map_data, set_map_data] = useState({});
 
     useLayoutEffect(()=> {
-        let data=[];
+        const data=[];
         for (let state in state_data) {
             data.push(
                 {

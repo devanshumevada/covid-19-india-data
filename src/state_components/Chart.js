@@ -11,8 +11,8 @@ const Chart = props => {
         /* 
             -> The data adapts to the change in to_show, district_data and search_text and updates the chart based on those changes
         */
-        let labels = []
-        let datasets = [
+        const labels = []
+        const datasets = [
             {
                 label: `${to_show} numbers`,
                 data:[],
@@ -20,7 +20,7 @@ const Chart = props => {
         
             }
         ];
-        for (let district of district_data) {
+        for (const district of district_data) {
 
                 if (district[0].toLowerCase().includes(search_text)) {
                     labels.push(district[0]);
