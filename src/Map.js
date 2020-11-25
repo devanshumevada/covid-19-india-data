@@ -9,7 +9,6 @@ import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.candy';
 ReactFC.fcRoot(FusionCharts, FusionMaps, World, FusionTheme);
 
 
-
 const Map = props => {
     const state_data = props.state_data;
     const to_show = props.to_show;
